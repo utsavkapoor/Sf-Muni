@@ -1,0 +1,21 @@
+{
+  "name": "thousandeyes_challenge",
+  "version": "1.0.0",
+  "description": "Thousand Eyes Frontend Challenge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=6.10.0",
+    "npm": ">3.10.8"
+  },
+  "author": "Utsav Kapoor",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "nodemon": "^1.17.1"
+  }
+}

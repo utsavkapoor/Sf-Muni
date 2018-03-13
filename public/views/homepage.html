@@ -1,0 +1,29 @@
+<div class="row">
+    <form class="form-inline">
+        <small class="text-muted form-text">Subroutes are of the format N6 etc.</small>
+        <div class "form-group">
+            <div class="mb-6 mr-sm-6 mb-sm-0">
+                <input id="route" type="text" class="form-control" ng-model="controller1.subroute" placeholder="Enter Subroutes" aria-describedby="Get Subroutes" />
+                <button type="submit" class="btn btn-primary" ng-click="controller1.GetSubRoute();">Click for Subroutes</button>
+                <button type="submit" class="btn btn-primary" ng-click="controller1.Reset();">Reset</button>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <div class="form-check-label">
+                        <input type="checkbox" class="form-check-input" ng-model="controller1.showRoute" ng-click="controller1.Routes();" /> Show Routes Also
+                    </div>
+                    <div ng-if="controller1.routerMessage">Wait for Routes to Load</div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <h4 ng-show="controller1.showMessage">{{controller1.message}}</h4>
+</div><!-- Form with buttons for subroutes and showing routes on the Map-->
+<div class="jumbotron">
+    <div class="map-box"></div>
+    <map data="controller1.data" show-route="controller1.showRoute" route-message="controller1.routerMessage"></map>
+</div><!-- Jumbotron for the Map-->
+<div class="row">
+    <h3>Subroutes Avaliable:</h3>
+    <p>{{controller1.routeName}}</p>
+</div><!--Shows all the subroutes avaliable -->

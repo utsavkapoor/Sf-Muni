@@ -1,0 +1,34 @@
+SF MUNI VISUALIZATION
+
+by - Utsav Kapoor (utsav.kapoor@asu.edu)
+
+dependencies:
+1. Install npm (https://www.npmjs.com/package/npm-install-prompt/tutorial)
+
+Note:
+Sometimes getting data of sub-routes hang, i.e, "routes is still loading" message is shown even after a couple of minutes of application being run. so that may require a page reload manually. (Couldnt debug or reproduce the problem that often as my week ran out. hope you ignore this small bug.)
+
+Instructions
+1. Unzip thousand_eyes_challenge.zip
+2. Install dependencies using npm install
+3. Start your server using npm start
+4. Navigate to app in browser (localhost:3000).
+5. Enjoy !
+Discussion
+I used the following technologies: HTML, CSS, Angularjs, d3, Node, Express, Bootstrap. I used the MEAN Stack boilerplate (https://github.com/utsavkapoor/BoilerPlate-MEAN) to generate the scaffolding for this app.
+
+Requirements.
+
+1.Display a Base Map of SF using GeoJSON and dynamically update the buses every 15 seconds using NEXTBus API.
+
+I display the map in a Jumbotron so that it stands out. Map is drawn as soon as the Page Loads. I also setup a watcher for the data so it may happen that bus data is shown after 15 seconds("tick"). Also Route data is being loaded and stored simultaneously as soon as the page loads and is only shown when show button is clicked to make the loading of the Map and Bus Data faster.
+
+2. Separate Control to Select a Sub-route. Only the vehicles of the route should be drawn on the Map.
+
+I provided an input box to enter the sub-route with a list of all routes available for sf-muni. It Displays an error message if the Sub-route is not available or if no buses are running on that route. Also error message is displayed if more than 1 sub-route is selected. I also provided a reset button which resets the view back to showing all routes in the next tick.
+
+Future Work.
+
+1. Adding tests.
+2. Improving and polishing the UI
+3. Adding feature to select multiple routes.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SF-MUNI Visualization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+</head>
+
+<body ng-app="SfMuni">
+    <div class="container">
+        <div class="row text-center">
+            <h1>SF-MUNI Live Tracking</h1>
+        </div>
+        <div>
+            <ui-view></ui-view>
+        </div>
+
+        <!-- Modules-->
+        <script type="text/javascript" src="./public/js/module/SfMuni.module.js"></script>
+        <script type="text/javascript" src="./public/js/module/d3.module.js"></script>
+
+        <!-- Controllers,Directives,Services-->
+        <script type="text/javascript" src="./public/js/controllers/visualization.controller.js"></script>
+        <script type="text/javascript" src="./public/js/services/d3.service.js"></script>
+        <script type="text/javascript" src="./public/js/services/munidata.service.js"></script>
+        <script type="text/javascript" src="./public/js/services/DrawVehicles.services.js"></script>
+        <script type="text/javascript" src="./public/js/directives/visualization.directives.js"></script>
+</body>
+
+</html>
