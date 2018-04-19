@@ -9,7 +9,7 @@ Note:
 Sometimes getting data of sub-routes hang, i.e, "routes is still loading" message is shown even after a couple of minutes of application being run. so that may require a page reload manually. (Couldnt debug or reproduce the problem that often as my week ran out. hope you ignore this small bug.)
 
 Instructions
-1. Unzip thousand_eyes_challenge.zip
+1. Unzip sf-muni.zip
 2. Install dependencies using npm install
 3. Start your server using npm start
 4. Navigate to app in browser (localhost:3000).
